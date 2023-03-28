@@ -17,9 +17,7 @@ function renderThumbnails(page) {
         const img = document.createElement('img');
         img.src = `https://raw.githubusercontent.com/BTCMonkeyBusiness/smb-assets/main/${i}.png`;
         img.addEventListener('click', () => {
-            const popup = window.open(`https://raw.githubusercontent.com/BTCMonkeyBusiness/smb-assets/main/${i}.png`, 'popup', 'width=500,height=500,top=50,left=50');
-            const botPopup = window.open('https://ordinalsbot.com/', 'botPopup', `width=500,height=500,top=50,left=${window.innerWidth - 550}`);
-            popup.focus();
+         window.open(`https://raw.githubusercontent.com/BTCMonkeyBusiness/smb-assets/main/${i}.png`, '_blank');
         });
         column.appendChild(img);
         const small = document.createElement('p');
@@ -94,8 +92,6 @@ function search() {
     const column = thumbnails.childNodes[index % pageSize];
     if (column) {
         const img = column.firstChild;
-        const popup = window.open(`https://raw.githubusercontent.com/BTCMonkeyBusiness/smb-assets/main/${index}.png`, 'popup', 'width=500,height=500,top=50,left=50');
-        const botPopup = window.open('https://ordinalsbot.com/', 'botPopup', `width=500,height=500,top=50,left=${window.innerWidth - 550}`);
-        popup.focus();
+        window.open(`https://raw.githubusercontent.com/BTCMonkeyBusiness/smb-assets/main/${index}.png`, '_blank');
     }
 }
