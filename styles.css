@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+  background-color: black;
+  color: white;
+}
+img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+  flex: 1 1 10%; /* distribute remaining space evenly */
+  max-width: 10%; /* limit width to 10% */
+  text-align: center;
+}
+.small {
+  font-size: 12px;
+  text-align: center;
+}
+.drop-down {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #333333;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+}
+.drop-down option {
+  color: black;
+  background-color: white;
+}
+h1, div {
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+    ...
+}
