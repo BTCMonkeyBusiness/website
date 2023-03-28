@@ -3,9 +3,7 @@
 <head>
 	<title>Bitcoin Monkey Business</title>
 	<link rel="stylesheet" href="styles.css"> <!-- Lier le fichier CSS ici -->
-
 </head>
-<body>
 <body>
 	<h1>Bitcoin Monkey Business</h1>
 	<div>
@@ -13,8 +11,12 @@
 		<input type="text" id="search" name="search">
 		<button onclick="search()">Go</button>
 	</div>
+	<div class="pagination">
+		<label for="pageSlider">Page : </label>
+		<span id="pageNumber">0</span> / 50
+		<input type="range" id="pageSlider" name="pageSlider" min="0" max="50" value="1">
+	</div>
 	<div class="row" id="thumbnails"></div>
-
-<script src="scripts.js"></script> <!-- Ajouter le fichier JavaScript ici -->
+	<script src="scripts.js"></script> <!-- Ajouter le fichier JavaScript ici -->
 </body>
 </html>
